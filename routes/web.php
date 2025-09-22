@@ -7,9 +7,17 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', function () {
-    return "hello world!";
+    return "<h1>hello world!</h1><br>Üdv!";
 });
 
 Route::get('/valami', function () {
     return view('valami');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/tomb-visszaad', function () {
+    return ["kulcs" => "ertek"];
 });
