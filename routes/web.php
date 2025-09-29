@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-
+use App\Http\Controllers\GroupController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -86,3 +86,6 @@ Route::get('/vezerlo/{post}', [
     PostController::class,
     'show',
 ]);
+
+
+Route::get('/csoport', [GroupController::class, 'list']);
