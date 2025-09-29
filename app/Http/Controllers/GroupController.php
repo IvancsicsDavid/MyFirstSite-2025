@@ -13,4 +13,10 @@ class GroupController extends Controller
             'diaklista' => Group::csoportlista()
         ]);
     }
+    function show($id){
+        return view('diak', [
+            'diaklista' => Group::csoportlista(),
+            'id' => $id
+        ]);
+    }
 }
