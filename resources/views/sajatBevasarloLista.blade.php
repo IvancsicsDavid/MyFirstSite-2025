@@ -1,3 +1,7 @@
+@extends('pastellayout')
+
+
+@section('tartalom')
 <div>
     <ul>
     <?php
@@ -18,3 +22,4 @@
     @endforeach
     </ol>
 </div>
+@endsection
