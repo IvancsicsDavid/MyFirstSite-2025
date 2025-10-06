@@ -17,11 +17,11 @@
  <label for="show-menu" class="open"><span class="fa fa-bars"></span></label>
  <label for="show-menu" class="close"><span class="fa fa-times"></label>
  <ul id="menu">
-    <li><a href="/" >Home</a></li>
-    <li><a href="/udvozles">Üdvözlés</a></li>
-    <li><a href="/contact" >Kontakt</a></li>
-    <li><a href="/bevesarlolista" >Bevásárló-Lista</a></li>
-    <li><a href="/userdata?felhasznalonev=David&vezeteknev=Ivancsics&keresztnev=David">Felhasználói adat</a></li>
+    <li><a class="{{Request::path() === '/' ? 'active' : ''}}" href="/" >Home</a></li>
+    <li><a class="{{Request::path() === 'udvozles' ? 'active' : ''}}" href="/udvozles">Üdvözlés</a></li>
+    <li><a class="{{Request::path() === 'contact' ? 'active' : ''}}" href="/contact" >Kontakt</a></li>
+    <li><a class="{{Request::path() === 'bevesarlolista' ? 'active' : ''}}" href="/bevesarlolista" >Bevásárló-Lista</a></li>
+    <li><a class="{{Request::path() === 'userdata?felhasznalonev=David&vezeteknev=Ivancsics&keresztnev=David' ? 'active' : ''}}" href="/userdata?felhasznalonev=David&vezeteknev=Ivancsics&keresztnev=David">Felhasználói adat</a></li>
  </ul>
 </nav>
 <!-- // -->
