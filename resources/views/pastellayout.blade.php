@@ -8,7 +8,8 @@
 <meta name="Description" lang="en" content="open source html and css template">
 <meta name="author" content="mlp design">
 <meta name="robots" content="index, follow">
-<link rel="stylesheet" href="css/pastel.css">
+<!--<link rel="stylesheet" href="css/pastel.css">-->
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 <!-- Menu Items -->
